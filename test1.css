@@ -1,0 +1,176 @@
+
+body{
+   --background-color: black;
+    background-image: url(w.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 500px 650px;
+    --margin-top: 325px;
+}
+    .spinning-hypnotic-disc{
+ 
+        margin-top: 50px;
+        margin-bottom:-125px;
+        align-content: center;
+        margin-right: 40px;
+        
+/*
+        width:455px;
+        height:455px;
+*/
+        
+    }
+
+
+.spinning-hypnotic-disc:hover
+{
+-webkit-animation: spin1 2s infinite linear;
+-moz-animation: spin1 2s infinite linear;
+-o-animation: spin1 2s infinite linear;
+-ms-animation: spin1 2s infinite linear;
+animation: spin1 2s infinite linear;
+}
+
+@-webkit-keyframes spin1 {
+0% { -webkit-transform: rotate(0deg);}
+100% { -webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes spin1 {
+0% { -moz-transform: rotate(0deg);}
+100% { -moz-transform: rotate(360deg);}
+}
+@-o-keyframes spin1 {
+0% { -o-transform: rotate(0deg);}
+100% { -o-transform: rotate(360deg);}
+}
+@-ms-keyframes spin1 {
+0% { -ms-transform: rotate(0deg);}
+100% { -ms-transform: rotate(360deg);}
+}
+@-keyframes spin1 {
+0% { transform: rotate(0deg);}
+100% { transform: rotate(360deg);}
+}
+
+
+.contracting-spinning-hypnotic-disc:hover
+{
+-webkit-animation: spin1 2s infinite linear;
+-moz-animation: spin1 2s infinite linear;
+-o-animation: spin1 2s infinite linear;
+-ms-animation: spin1 2s infinite linear;
+animation: spin1 2s infinite linear;
+-webkit-animation: spin2 2s infinite linear, spin2 5s infinite ease-in-out alternate;
+-moz-animation: spin2 2s infinite linear normal, 5s infinite ease-in-out alternate;
+-o-animation: spin2 2s infinite linear, spin2 5s infinite ease-in-out alternate;
+-ms-animation: spin2 2s infinite linear, spin2 5s infinite ease-in-out alternate;
+animation: spin2 2s infinite linear, spin2 5s infinite ease-in-out alternate;
+}
+
+@-webkit-keyframes spin2 {
+0% { -webkit-transform: rotate(0deg) scale(1);}
+100% { -webkit-transform: rotate(360deg) scale(.5);}
+}
+@-moz-keyframes spin2 {
+0% { -moz-transform: rotate(0deg) scale(1);}
+100% { -moz-transform: rotate(360deg) scale(.5);}
+}
+@-o-keyframes spin2 {
+0% { -o-transform: rotate(0deg) scale(1);}
+100% { -o-transform: rotate(360deg) scale(.5);}
+}
+@-ms-keyframes spin2 {
+0% { -ms-transform: rotate(0deg) scale(1);}
+100% { -ms-transform: rotate(360deg) scale(.5);}
+}
+@-keyframes spin2 {
+0% { transform: rotate(0deg) scale(.5);}
+100% { transform: rotate(360deg) scale(1);}
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+  clip-path:inset(318px 1463px -90px 1463px);
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  margin-top: 210px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Times New Roman", Times, serif;
+
+  
+}
+
+h1{
+    letter-spacing: 25px;
+}
+
+h2{
+    letter-spacing: 5px;
+}
+/*
+h1 {
+
+  transform: translateY(0px);
+  animation: 1s slideIn ease-in-out forwards 0.6s;
+  z-index: 10;
+  opacity: 0;
+  position: relative;
+}
+*/
+
+h2 {
+
+  transform: rotate(360deg);
+  animation: 2s FadeIn ease-in-out forwards 0.6s;
+  z-index: 10;
+  opacity: 0;
+  position: relative;
+}
+
+h5 {
+
+   transform: translateX(600px);
+  animation: 4s H5In ease-in-out forwards 0.6s;
+  z-index: 10;
+  opacity: 0;
+  position: relative;
+}
+
+h1,strong{
+      transform: translateX(-600px);
+  animation: 4s StrongIn ease-in-out forwards 0.6s;
+  z-index: 10;
+  opacity: 0;
+  position: relative;
+}
+
+@keyframes slideIn {
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes FadeIn {
+  100% {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+@keyframes H5In {
+  100% {
+    transform: translateZ(0px);
+    opacity: 1;
+  }
+}
+@keyframes StrongIn {
+  100% {
+    transform: translateZ(0px);
+    opacity: 1;
+  }
+}
